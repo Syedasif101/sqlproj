@@ -1,0 +1,23 @@
+select*from Student.tbiparents;
+create database Student;
+use Student;
+create table tb1parents(
+parent_id int,
+parent_name varchar(20),
+city varchar(20),
+age int,
+annual_income int,
+email_id varchar(20),
+occupation varchar(20))
+
+update tb1Parents set email_id="not available";
+
+
+
+select count(annual_income) from tb1Parents where annual_income<600000;
+
+select city
+from Student
+where city in (Ahamadabad, benglore,chennai);
+
+select count(annual_income) from tb1parents where annual_income<500000 && age>45;
